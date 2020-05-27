@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+
+  .clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+/* header */ 
+header {
+    padding-top: 38px;
+    width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 111px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    filter: brightness(52%);
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 11px;
+    float: right;
+}
+
+.main-logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: #515151;
+    font-size: 30px;
+    float: left;
+}
+
+.main-logo::first-letter {
+    color: #1abc9c;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: rgba(78, 198, 171, 1);
+    transition: 0.6s;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 35px;
+}    
+
+.main-section {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-section-tite {
+    width: 740px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}   
+
+/* button styles*/
+
+.main-section-button {
+    width: 1120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-button {
+    background-color: rgba(78, 198, 171, 0.5);
+    border: none;
+    height: 104px;
+    width: 104px;
+    background-image: url(../img/slide/left-arow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    transition: 0.6s; 
+    
+}
+
+.right-button {
+    background-color: rgba(78, 198, 171, 0.5);
+    border: none;
+    height: 104px;
+    width: 104px;
+    background-image: url(../img/slide/right-arow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+    transition: 0.6s; 
+}
+
+.left-button:hover,
+.right-button:hover {
+    background-color: rgba(78, 198, 171, 1);
+    transition: 0.6s;  
+}
+
+/* main section styles */
+.section-title-1 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1.2px;
+}
+
+.section-title-2 {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;    
+}
+
+
+
+
+
+
+
+
+
+
