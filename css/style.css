@@ -7,25 +7,19 @@
     box-sizing: border-box;
   }
 
-  .clearfix::after {
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
 }
 
 /* header */ 
+
 header {
     padding-top: 38px;
     width: 1110px;
     margin: 0 auto;
     padding-bottom: 111px;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    filter: brightness(52%);
 }
 
 .menu li {
@@ -45,14 +39,14 @@ img {
 .menu {
     list-style: none;
     padding: 0;
-    margin-top: 11px;
+    margin: 0;
     float: right;
 }
 
 .main-logo {
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #515151;
     font-size: 30px;
     float: left;
@@ -66,18 +60,24 @@ img {
 
 .menu a:hover,
 .menu a:focus {
-    color: rgba(78, 198, 171, 1);
+    color: #1abc9c;
     transition: 0.6s;
+}
+
+.shirt-item li:hover img  {
+    background-color: #1abc9c;
+     
 }
 
 .menu li:not(:last-child) {
     margin-right: 35px;
-}    
+}
 
 .main-section {
     width: 1600px;
     margin: 0 auto;
     position: relative;
+    display: block;
 }
 
 .main-section-tite {
@@ -86,7 +86,14 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);  
-}   
+}
+
+.main-foto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    filter: brightness(52%);
+}
 
 /* button styles*/
 
@@ -146,6 +153,246 @@ img {
     font-weight: 300;
     text-transform: uppercase;    
 }
+
+.shirt-section {
+    background-color: #e9f0fd;
+    padding-bottom: 100px;
+}
+
+.shirt-section-container {
+    width: 1115px;
+    margin: 0 auto;
+    padding-top: 101px;
+}
+
+.shirt-section-title {
+    text-align: center;
+    color: #515151;
+    font-size: 58px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.shirt-section-title::after {
+    content: '';
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 0 auto; 
+    display: block;   
+    margin-top: 32px;
+    margin-bottom: 82px;
+}
+
+ul {
+    list-style: none;
+    height: auto;    
+}
+
+.shirt-list {
+    width: 255px;
+    height: 322px;
+}
+
+.shirt-list-item {
+    float: left;
+    position: relative;
+    
+}
+
+.image {
+font-size: 0px;
+}
+
+.shirt-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.name {
+    float: left;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 14px;    
+    font-size: 18px;
+    padding-top: 12px;
+}
+
+.price {
+    float: right;
+    margin: 0;
+    padding: 12px 11px;
+    background-color: rgba(140, 140, 140, 0.5);
+}
+
+.shirt-name-price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #323232;
+    transition: 0.6s;
+}
+
+.shirt-list-item:hover .shirt-name-price {
+    background-color: rgba(78, 198, 171, 1);
+    transition: 0.6s; 
+}
+
+button:nth-child(-n + 2) {
+    margin-right: 4px;
+}
+
+button:nth-child(-n + 3) {
+    margin-bottom: 4px;
+}
+
+.shirt-list-item:hover .button-party {
+    opacity: 1;
+    visibility: visible;  
+    transition: 0.6s;  
+}
+
+.image-shirt {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.after-party {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;       
+}
+
+.button-party {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(255, 255, 255, 1);
+    background-clip: padding-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+    box-sizing: border-box;
+}
+
+.button-party {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.heart-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/icon/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 50px;
+}
+
+.arow-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/icon/arow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 50px;
+}
+
+.clock-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/icon/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 50px;
+}
+
+.cart-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url(../img/icon/cart.png);
+    background-repeat: no-repeat;
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 168px;
+    background-position: 8px 8px;
+}
+
+.cart-button {    
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    background-color: #515151;
+}
+
+button:hover {
+    background-color: rgba(78, 198, 171, 1);
+    transition: 0.6s;
+}
+
+.footer-container {
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #323232;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+  
+.sign-container {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    width: 1130px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+  
+  .style-footer {
+    color: #1abc9c;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
