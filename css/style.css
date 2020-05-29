@@ -13,12 +13,22 @@
     clear: both;
 }
 
+.size-container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.size-container-2 {
+    width: 1140px;
+    margin: 0 auto;    
+}
+
 /* header */ 
 
 header {
     padding-top: 38px;
-    width: 1110px;
-    margin: 0 auto;
+    /*width: 1110px;
+    margin: 0 auto;*/
     padding-bottom: 111px;
 }
 
@@ -73,12 +83,7 @@ header {
     margin-right: 35px;
 }
 
-.main-section {
-    width: 1600px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-}
+
 
 .main-section-tite {
     width: 740px;
@@ -96,14 +101,22 @@ header {
 }
 
 /* button styles*/
+.main-section {
+    /*width: 1600px;*/
+    /*margin: 0 auto; */
+    position: relative;
+    
+    
+}
 
-.main-section-button {
-    width: 1120px;
+.text-slider,
+.button-slider {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .left-button {
     background-color: rgba(78, 198, 171, 0.5);
@@ -160,7 +173,7 @@ header {
 }
 
 .shirt-section-container {
-    width: 1115px;
+    /*width: 1115px;*/
     margin: 0 auto;
     padding-top: 101px;
 }
@@ -347,7 +360,7 @@ button:hover {
 }
 
 .footer-container {
-    width: 100%;
+    /*width: 100%;*/
     height: 88px;
     text-align: center;
     margin: 0 auto;
