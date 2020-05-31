@@ -109,14 +109,33 @@ header {
     
 }
 
-.text-slider,
+/*.text-slider,
 .button-slider {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}*/
+
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
+.button-slider {
+    position: relative;
+}
+
+.text-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 740px;
+}
 
 .left-button {
     background-color: rgba(78, 198, 171, 0.5);
@@ -192,10 +211,11 @@ header {
     width: 164px;
     height: 7px;
     background-color: #1abc9c;
-    margin: 0 auto; 
-    display: block;   
+    margin: 0 auto;
+    display: block;
     margin-top: 32px;
-    margin-bottom: 82px;
+    margin-bottom: 81px;  
+    
 }
 
 ul {
@@ -340,15 +360,18 @@ font-size: 0px;
     background-image: url(../img/icon/cart.png);
     width: 168px;
     background-position: 8px 8px;
+
+    
 }
 
 .cart-button {    
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-weight: 400px;
     text-transform: uppercase;
     background-color: #515151;
+    padding-left: 40px;
+    
 }
 
 button:hover {
