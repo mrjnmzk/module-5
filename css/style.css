@@ -19,7 +19,7 @@
 }
 
 .size-container-2 {
-    width: 1140px;
+    width: 1110px;
     margin: 0 auto;    
 }
 
@@ -102,20 +102,8 @@ header {
 
 /* button styles*/
 .main-section {
-    /*width: 1600px;*/
-    /*margin: 0 auto; */
     position: relative;
-    
-    
 }
-
-/*.text-slider,
-.button-slider {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
 
 .slider {
     position: absolute;
@@ -246,7 +234,7 @@ font-size: 0px;
     float: left;
     color: #ffffff;
     margin: 0;
-    padding: 10px 14px;    
+    padding-left:14px;    
     font-size: 18px;
     padding-top: 12px;
 }
@@ -266,6 +254,7 @@ font-size: 0px;
     text-transform: uppercase;
     background-color: #323232;
     transition: 0.6s;
+    
 }
 
 .shirt-list-item:hover .shirt-name-price {
